@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Post Donation | From Waste to Need</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f8f5;
+            margin: 0;
+            padding: 30px;
+        }
+
+        .box {
+            max-width: 600px;
+            margin: auto;
+            background: white;
+            padding: 30px;
+            border-radius: 18px;
+            box-shadow: 0 5px 25px #0002;
+        }
+
+        h1 {
+            color: #0b6b4f;
+        }
+
+        label {
+            display: block;
+            margin-top: 18px;
+            font-weight: bold;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 12px;
+            margin-top: 7px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+        }
+
+        textarea {
+            height: 100px;
+        }
+
+        button {
+            margin-top: 25px;
+            width: 100%;
+            padding: 15px;
+            background: #0b6b4f;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            font-size: 17px;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="box">
+
+    <h1>📦 Post a Donation</h1>
+
+    <p>Have something useful that someone else could need?</p>
+
+    <label>Category</label>
+    <select>
+        <option>Food</option>
+        <option>Clothes</option>
+        <option>Books</option>
+        <option>Education</option>
+        <option>Household</option>
+        <option>Business Surplus</option>
+    </select>
+
+    <label>Item Name</label>
+    <input type="text" placeholder="Example: Rice packets">
+
+    <label>Quantity</label>
+    <input type="text" placeholder="Example: 10 packets">
+
+    <label>Pickup Location</label>
+    <input type="text" placeholder="Enter pickup location">
+
+    <label>Available Until</label>
+    <input type="datetime-local">
+
+    <label>Photo</label>
+    <input type="file" accept="image/*">
+
+    <label>Additional Details</label>
+    <textarea placeholder="Describe the item..."></textarea>
+
+    <button onclick="alert('Donation form submitted!')">
+        Submit Donation
+    </button>
+
+</div>
+
+</body>
+</html>
